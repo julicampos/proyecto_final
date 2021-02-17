@@ -1,0 +1,253 @@
+/*variables*/
+$grisclarito:#E6E3E3;
+$rosita:#FDA3A3;
+$grisOscurito: #6A6A68;
+
+header {
+  background: $grisclarito; }
+
+
+header, footer, article, nav, aside {
+  padding: 1rem; }
+
+/*Logo y presentacion*/
+
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: $grisclarito;
+  border-radius: 0.3rem;
+  h1{
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: 'Prata', sans-serif;
+  }
+}
+
+/*menu*/
+
+.navbar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: $grisclarito;
+  a{
+    text-decoration: none;
+    background-image: linear-gradient($rosita, $rosita);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;}
+}  
+
+a:hover, a:focus {
+  background-size: 100% 2px;
+}
+
+.bg-light {
+  background-color: $grisclarito !important;
+}
+
+
+#menu {
+  color: black;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  background-color: $grisclarito;
+}
+
+
+/*carousel*/
+.carousel-item {
+  position: relative;
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.carousel-caption{
+  position: absolute; 
+  right: 15%;
+  top: 280px; /* Cambiar bottom por top y los píxeles que necesites */
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 100px;
+  letter-spacing: 0,5px;
+  font-family: "Prata", sans-serif;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0); /* Añadir para conseguir el fondo con opacidad */
+  a{
+    font-weight: bold;
+    font-size: 14px;
+  }
+}
+
+/*animacion del carousel caption*/
+.carousel-caption {
+
+    animation-duration: 2s;
+    animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  0% {
+    margin-top: 100%; }
+
+  50%{
+    margin-top: 50%;
+  }  
+  100% {
+    margin-bottom: 0%; } 
+  }
+
+/*responsive carousel*/
+
+@media (max-width: 601px){
+  .carousel-caption {
+    font-size: 50px;
+    position: absolute; 
+    right: 15%;
+    top: 10%; /* Cambiar bottom por top y los píxeles que necesites */
+    left: 15%;
+} 
+}
+
+@media (max-width: 767px){
+  .carousel-caption {
+    font-size: 25px;
+    position: absolute; 
+    right: 15%;
+    top: 200px; /* Cambiar bottom por top y los píxeles que necesites */
+    left: 15%;
+} 
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .carousel-caption{
+    font-size: 50px;
+    position: absolute; 
+    right: 15%;
+    bottom: 500px; /* Cambiar bottom por top y los píxeles que necesites */
+    left: 15%; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-caption{
+    font-size: 15px;
+    position: absolute; 
+    right: 15%;
+    top: 280px; /* Cambiar bottom por top y los píxeles que necesites */
+    left: 15%; 
+} 
+}
+
+/*para el breadcrumb*/
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background: $grisclarito;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+/*parrafo del final*/
+
+.body__parrafo {
+  color: $grisOscurito;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif; }
+
+/*para hacerlo responsive*/
+@media (max-width: 576px) {
+  .body__parrafo {
+    font-size: 7px;
+    font-weight: bolder; } }
+
+@media (min-width: 992px) {
+  .body__parrafo {
+    font-size: 20px;
+    font-weight: normal; } }
+
+/*animacion del parrafo*/
+.body__parrafo {
+  p{
+    animation-duration: 2s;
+    animation-name: aparecer;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

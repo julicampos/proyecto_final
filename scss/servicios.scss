@@ -1,0 +1,75 @@
+/*estilos para servicios.html*/
+
+/*variables*/
+$grisclarito:#E6E3E3;
+$rosita: #FDA3A3;
+
+.titulosServicios{
+  font-size: 38px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Prata', sans-serif;
+
+}
+
+.textoServicios{
+  font-size: 17px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  line-height: 30px;
+  animation-duration: 3s;
+  animation-name: fadeIn;
+  h4{
+  	line-height: 30px;
+  }
+}
+
+.textoServicios :hover, .textoServicios:focus {
+  animation-duration: 3s;
+  animation-name: fadeIn;
+}
+
+
+.eventos{
+	background-color: $grisclarito;
+}
+
+/*Responsive*/
+
+@media (min-width: 576px) {
+   .textoServicios {
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .textoServicios {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .textoServicios {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .textoServicios {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 1920px) {
+  .textoServicios {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+

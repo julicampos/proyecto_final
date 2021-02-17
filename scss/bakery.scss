@@ -1,0 +1,62 @@
+/*estilos para bakery.html*/
+
+$grisclarito:#E6E3E3;
+$grisOscurito: #6A6A68;
+$rosita:#FDA3A3;
+
+.tituloBakery{
+  margin-top: 5%;
+  font-size: 38px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Prata', sans-serif;
+}
+
+.subtituloBakery{
+  font-size: 25px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.caja{
+  position: relative;
+  display: inline-block;
+}
+
+.textoTortas{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: $grisOscurito;
+  text-align: center;
+}
+
+.nombreTortas{
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  font-family: 'Prata', sans-serif;
+  text-align: center;
+}
+
+.botonParaPedir{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+@media (max-width: 767px){
+  .botonParaPedir {
+    margin-left: 40%;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px){
+  .botonParaPedir {
+    margin-left: 40%;
+  }
+}
+

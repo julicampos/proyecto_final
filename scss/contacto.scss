@@ -1,0 +1,88 @@
+/*estilos para contacto.html*/
+$grisclarito:#E6E3E3;
+$grisOscurito: #6A6A68;
+$rosita:#FDA3A3;
+
+.tituloContacto{
+  margin-top: 5%;
+  font-size: 38px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Prata', sans-serif;
+
+}
+
+form {
+  background-color: $grisclarito;
+  margin-top: 5%;
+
+}
+
+.formDeContacto {
+  font-family: "Prata", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: left; }
+
+input {
+  width: 200px;
+  height: 20px;
+  transition: all 2s; }
+
+input:focus {
+  width: 300px;
+  height: 30px;
+  font-size: 12px; }
+
+textarea {
+  background-color: white;
+  color: black; }
+
+textarea:focus {
+  color: $rosita;
+}
+
+.botonesForm {
+  font-family: "Prata", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left; }
+
+/*variable*/
+select {
+  background-color: $grisclarito; }
+
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;}
+}
+
+
+
